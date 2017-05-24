@@ -7,7 +7,7 @@ RUN apt-get install -y nodejs mongodb
 RUN npm config set registry http://jfrog.local/artifactory/api/npm/npm/
 RUN mkdir /data
 RUN mkdir /data/db
-RUN npm install goof
+RUN npm install goof@0.0.4
 ADD ./run.sh /
 RUN chmod ugo+x /run.sh
 
